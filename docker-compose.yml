@@ -1,0 +1,19 @@
+
+services:
+  db:
+    image: library/postgres:13-alpine
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+    networks:
+      - postgres-network
+    volumes:
+      - ./docker/database:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1245  # Consider using a stronger password or an env file
+      POSTGRES_DB: ecommerce
+
+networks: 
+  postgres-network:
+    driver: bridge
