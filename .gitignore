@@ -34,7 +34,8 @@ wheels/
 # Environments 
 .env 
 .venv 
-env/ 
+env/
+envs/ 
 venv/ 
 ENV/ 
 env.bak/ 
