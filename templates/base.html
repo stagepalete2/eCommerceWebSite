@@ -14,11 +14,13 @@
     <title></title>
 </head>
 <body class="">
-    {% include 'shared/header.html' %}
-
-    {% block 'page' %}
-    {% endblock %}
-
-    {% include 'shared/footer.html' %}
+    <div class="layout-wrapper">
+        {% include 'shared/header.html' %}
+    
+        {% block 'page' %}
+        {% endblock %}
+    
+        {% include 'shared/footer.html' %}
+    </div>
 </body>
 </html>
