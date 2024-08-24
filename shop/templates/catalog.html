@@ -2,5 +2,99 @@
 {% load static %}
 
 {% block 'page' %}
-    
+    <div class="container-fluid">
+        {% include 'components/breadcrumb.html' %}
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-2">
+                <h5>Categories</h5>
+                <div class="">
+                    <button class="btn w-100 text-left d-flex flex-row justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Male<i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                          LowKey
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="">
+                    <h5>Filters</h5>
+                    <div class="">
+                        <h6>Color</h6>
+                        <div class="d-flex flex-row form-check align-items-center">
+                            <input class="form-check-input mr-2" type="checkbox" id="check1" name="option1" value="something" style="margin-bottom: .25em!important;" checked>
+                            <label class="bg-dark rounded-circle mx-2" for="check1" style="width: 1.25em; height: 1.25em; "></label>
+                            <label class="form-check-label" for="check1">Red 1</label>
+                        </div> 
+                    </div>
+                    <hr>
+                    <div class="">
+                        <h6>Size</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                            <label class="form-check-label">L</label>
+                        </div> 
+                    </div>
+                    <hr>
+                    <div class="">
+                        <h6>Style</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+                            <label class="form-check-label">L</label>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h5>Catalog</h5>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="btn-group w-100">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                Sorting
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuClickableInside">
+                                <li>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="priceUp">
+                                        <label for="priceUp" class="form-check-label">Price increase</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="priceDown">
+                                        <label for="priceDown" class="form-check-label">Price decrease</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="popularity">
+                                        <label for="popularity" class="form-check-label">By popularity</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="rating">
+                                        <label for="rating" class="form-check-label">By rating</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="discount">
+                                        <label for="discount" class="form-check-label">By discount</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+                    {% for i in '12345' %}
+                    {% include 'components/product_card.html' %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
