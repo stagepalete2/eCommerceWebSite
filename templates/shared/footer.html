@@ -1,4 +1,61 @@
 {% load static %}
 <footer>
+    {% include 'components/divider.html' %}
+    <div class="container-fluid rounded bg-light">
+        <div class="row justify-content-center align-items-start p-5">
+            <div class="col-md-3">
+                <h4>Our App</h4>
+                <img src="{% static 'test_images/qr.png' %}" alt="">
+            </div>
+            <div class="col-md-3">
+                <h4>For Customers</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Addresses</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Order status</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Payment and delivery</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Guarantees and returns</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">How to choose the size</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Company</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">About us</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Cooperation</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Affiliate Program</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Program for stylists</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Vacancies</a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 justify-content-between">
+                <h4>Stay up to date with promotions and offers</h4>
+                <form class="row g-3">
+                    <div class="col-auto">
+                      <label for="email" class="visually-hidden">Password</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+                    </div>
+                    <p class="fs-6 fw-lighter">By clicking the Subscribe button, I agree to the Personal Privacy Policy</p>
+                  </form>
     
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li class="list-group-item bg-light border-0"><a class="text-dark text-decoration-none" href=""><i class="fa-brands fa-youtube"></i></a></li>
+                  </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9"><p class="fs-6 fw-lighter">© 2024—2025 «eCommerce Marketplace». Reproduction and any reproduction of materials and illustrations of the site or fragments from them in any language is possible only with the written permission of eCommerce Marketplace</p></div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-6 text-center"><a class="text-dark fs-6 text-decoration-none fw-light" href="">Offer</a></div>
+                    <div class="col-md-6"><a class="text-dark fs-6 text-decoration-none fw-light" href="">Privacy Policy</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
