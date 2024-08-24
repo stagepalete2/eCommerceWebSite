@@ -1,0 +1,9 @@
+{% load static %}
+<div class="container-fluid py-3">
+    <h3 class="text-center fw-light">Top Sales</h3>
+    <div class="row justify-content-start row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-5">
+        {% for i in 'rangew' %}
+        {% include 'components/product_card.html' %}
+        {% endfor %}
+    </div>
+</div>
