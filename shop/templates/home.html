@@ -2,11 +2,11 @@
 {% load static %}
     
 {% block 'page' %}
-    <div class="bg-dark">
-        New
-    </div>
     {% include 'blocks/hero_section.html' %}
-    <div class="bg-dark">
-        New
-    </div>
+    {% include 'components/divider.html' %}
+    {% include 'blocks/categories_section.html' %}
+    {% include 'components/divider.html' %}
+    {% include 'blocks/recommended_section.html' %}
+    {% include 'components/divider.html' %}
+    {% include 'blocks/sales_section.html' %}
 {% endblock %}
