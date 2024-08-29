@@ -55,31 +55,31 @@
                                 Sorting
                             </button>
                             <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuClickableInside">
-                                <li>
+                                <li class="mx-auto px-3">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="priceUp">
                                         <label for="priceUp" class="form-check-label">Price increase</label>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="mx-auto px-3">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="priceDown">
                                         <label for="priceDown" class="form-check-label">Price decrease</label>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="mx-auto px-3">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="popularity">
                                         <label for="popularity" class="form-check-label">By popularity</label>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="mx-auto px-3">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="rating">
                                         <label for="rating" class="form-check-label">By rating</label>
                                     </div>
                                 </li>
-                                <li>
+                                <li class="mx-auto px-3">
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="discount">
                                         <label for="discount" class="form-check-label">By discount</label>
@@ -93,6 +93,21 @@
                     {% for i in '12345' %}
                     {% include 'components/product_card.html' %}
                     {% endfor %}
+                    <div class="col-lg-12">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                              <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
                 </div>
             </div>
         </div>
